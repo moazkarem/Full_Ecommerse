@@ -1,16 +1,34 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Drawer from "../Drawer/Drawer";
 import Button from "../../Ui/Button";
 
 const Navbar = () => {
   const [isDrawerOpen, setIsDrawerOpen] = useState(false);
+  const [scrollY, setScrollY] = useState(0);
 
   const toggleDrawer = () => {
     setIsDrawerOpen(!isDrawerOpen);
   };
+
+  const handleScroll = () => {
+    const position = window.scrollY;
+    setScrollY(position);
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
     <div>
-      <div className="navbar bg-base-100">
+      <div
+        className={`navbar ${
+          scrollY > 300 ? "bg-[#133A5E]" : "bg-transparent"
+        } transition-all duration-500 fixed top-0 w-full z-50`}
+      >
         <div className="container mx-auto px-4 flex justify-between items-center">
           <div className="flex items-center lg:hidden">
             <button className="btn btn-square btn-ghost" onClick={toggleDrawer}>
