@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import Drawer from "../Drawer/Drawer";
 import Button from "../../Ui/Button";
-
+import { NavLink } from "react-router-dom";
 const Navbar = () => {
   const [isDrawerOpen, setIsDrawerOpen] = useState(false);
   const [scrollY, setScrollY] = useState(0);
@@ -27,7 +27,7 @@ const Navbar = () => {
       <div
         className={`navbar ${
           scrollY > 300 ? "bg-[#133A5E]" : "bg-transparent"
-        } transition-all duration-500 fixed top-0 w-full z-50`}
+        } transition-all duration-500 fixed top-0 w-full z-50 `}
       >
         <div className="container mx-auto px-4 flex justify-between items-center">
           <div className="flex items-center lg:hidden">
@@ -58,29 +58,29 @@ const Navbar = () => {
           <div className="hidden lg:flex flex-1 justify-center space-x-4">
             <ul className="menu menu-horizontal p-0">
               <li className="text-lg p-2">
-                <a className="text-white hover:text-[#ffb921] hover:bg-transparent font-bold">
+                <NavLink to='/'  className="text-white hover:text-[#ffb921] hover:bg-transparent font-bold">
                   Home
-                </a>
+                </NavLink>
               </li>
               <li className="text-lg p-2">
-                <a className="text-white hover:text-[#ffb921] hover:bg-transparent font-bold">
+                <NavLink  to='/shop' className="text-white hover:text-[#ffb921] hover:bg-transparent font-bold">
                   Shop
-                </a>
+                </NavLink>
               </li>
               <li className="text-lg p-2">
-                <a className="text-white hover:text-[#ffb921] hover:bg-transparent font-bold">
+                <NavLink to='/blog'  className="text-white hover:text-[#ffb921] hover:bg-transparent font-bold">
                   Blog
-                </a>
+                </NavLink>
               </li>
               <li className="text-lg p-2">
-                <a className="text-white hover:text-[#ffb921] hover:bg-transparent font-bold">
+                <NavLink to='/about' className="text-white hover:text-[#ffb921] hover:bg-transparent font-bold">
                   About
-                </a>
+                </NavLink>
               </li>
               <li className="text-lg p-2">
-                <a className="text-white hover:text-[#ffb921] hover:bg-transparent font-bold">
+                <NavLink to='/contact'  className="text-white hover:text-[#ffb921] hover:bg-transparent font-bold">
                   Contact
-                </a>
+                </NavLink>
               </li>
             </ul>
           </div>

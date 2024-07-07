@@ -1,8 +1,10 @@
-import Navbar from "./components/Navbar/Navbar";
+
+import router from "./components/router";
+import { RouterProvider } from "react-router-dom";
 const App = () => {
   return (
     <div>
-      <Navbar />
+   <RouterProvider router={router} />
     </div>
   );
 };

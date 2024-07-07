@@ -12,8 +12,9 @@ body{
   height: 5000px;
 }
 
-.navbar .links .activ{
-  color: red;
+ .active{
+  color: #ffb921 !important;
+
 }
 @media (min-width: 1000px) {
   .navbar .flex-none.lg\\:hidden {
