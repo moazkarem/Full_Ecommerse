@@ -43,55 +43,43 @@ const Drawer = ({ isDrawerOpen, setIsDrawerOpen, toggleDrawer }) => {
           aria-label="close sidebar"
           className="drawer-overlay"
         ></label>
-         
+
         <ul className="menu menu-vertical bg-[#133A5E]  p-4 w-80 fixed h-full ">
           <li className="text-center ">
-          <div className=" flex items-center flex-1 lg:flex-none text-center lg:text-left">
-            <img
-              className="w-9 me-2"
-              src="https://user-liard-alpha.vercel.app/assets/logo-921ec42d.png"
-              alt="logo "
-            />
-            <h3 className="text-2xl text-white font-bold"> Furnival </h3>
-          </div>
+            <div className=" flex items-center flex-1 lg:flex-none text-center lg:text-left">
+              <img
+                className="w-9 me-2"
+                src="https://user-liard-alpha.vercel.app/assets/logo-921ec42d.png"
+                alt="logo "
+              />
+              <h3 className="text-2xl text-white font-bold"> Furnival </h3>
+            </div>
           </li>
           <li className="text-lg p-2">
             <NavLink
-              to='/'
+              to="/"
               className="text-white hover:text-[#ffb921] hover:bg-transparent text-lg "
             >
               Home
             </NavLink>
           </li>
           <li className="text-lg p-2">
-            <NavLink
-              to='/shop'
-              className="text-white hover:text-[#ffb921] "
-            >
+            <NavLink to="/shop" className="text-white hover:text-[#ffb921] ">
               Shop
             </NavLink>
           </li>
           <li className="text-lg p-2">
-            <NavLink
-              to='/blog'
-              className="text-white hover:text-[#ffb921] "
-            >
+            <NavLink to="/blog" className="text-white hover:text-[#ffb921] ">
               Blog
             </NavLink>
           </li>
           <li className="text-lg p-2">
-            <NavLink
-              to='/about'
-              className="text-white hover:text-[#ffb921] "
-            >
+            <NavLink to="/about" className="text-white hover:text-[#ffb921] ">
               About
             </NavLink>
           </li>
           <li className="text-lg p-2">
-            <NavLink
-              to='/contact'
-              className="text-white hover:text-[#ffb921] "
-            >
+            <NavLink to="/contact" className="text-white hover:text-[#ffb921] ">
               Contact
             </NavLink>
           </li>

@@ -1,6 +1,6 @@
 const Button = ({style , children ,...rest}) => {
     return (
-    <button  className={`${style} `} {...rest}>
+    <button  className={`${style} border-none`} {...rest}>
       {children}
     </button>
     )

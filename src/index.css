@@ -8,10 +8,16 @@
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
+body{
 
+  background-color: white !important;
+}
 .active {
   color: #ffb921 !important;
   background-color: #aaaaaa1c !important;
+}
+button{
+  transition: 1s;
 }
 @media (min-width: 1000px) {
   .navbar .flex-none.lg\\:hidden {
