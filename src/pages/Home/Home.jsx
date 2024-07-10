@@ -1,12 +1,15 @@
-import Carosel from "../../components/Carosel/Carosel"
-
+import Carosel from "../../components/Carosel/Carosel";
+import ShopCategory from "../../components/ShopCategory/ShopCategory";
 
 const Home = () => {
   return (
     <div>
-<Carosel />
+      <Carosel />
+     
+        <ShopCategory />
+   
     </div>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;

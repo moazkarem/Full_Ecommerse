@@ -42,3 +42,9 @@ swiper {
   background: #ffb921; /* لون النقاط عندما تكون نشطة */
 }
 
+@media(max-width:640px){
+.img-cars{
+  display: none;
+ background-color: #ffb921 !important;
+}
+}

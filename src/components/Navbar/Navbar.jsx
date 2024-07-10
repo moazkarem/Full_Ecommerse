@@ -28,7 +28,7 @@ const Navbar = () => {
       <div
         className={`navbar ${
           scrollY > 300 ? "bg-[#133A5E]" : "bg-transparent "
-        } transition-all duration-500 fixed top-0 w-full z-50 `}
+        } transition-all duration-500 fixed top-0 w-full z-50 h-16`}
       >
         <div className="container mx-auto px-4 flex justify-between items-center">
           <div className="flex items-center lg:hidden">
