@@ -19,6 +19,17 @@ body{
 button{
   transition: 1s;
 }
+@media(max-width:639px){
+  .shoping-slider{
+    /* background-color: #ffb921 !important;
+     */
+     /* width: 250px !important; */
+  }
+}
+
+
+
+
 @media (min-width: 1000px) {
   .navbar .flex-none.lg\\:hidden {
     display: none;

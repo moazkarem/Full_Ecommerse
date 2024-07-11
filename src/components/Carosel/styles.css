@@ -42,9 +42,17 @@ swiper {
   background: #ffb921; /* لون النقاط عندما تكون نشطة */
 }
 
-@media(max-width:640px){
+@media(max-width:639px){
 .img-cars{
-  display: none;
- background-color: #ffb921 !important;
+  display: none !important;
+ /* background-color: #ffb921 !important; */
+}
+.cars-titles{
+  /* background-color: red !important; */
+  width: 100% !important;
+  align-items: center !important;
+}
+.cars-titles p{
+  text-align: center;
 }
 }

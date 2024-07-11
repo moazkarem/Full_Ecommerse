@@ -12,7 +12,7 @@ import slide4 from "../../assets/imgs/carousil/slide4.jpg";
 import { Pagination, Navigation, Autoplay } from "swiper/modules";
 const Carousel = () => {
   return (
-    <div className="mb-32">
+    <div className="mb-28">
       <Swiper
         spaceBetween={0}
         centeredSlides={true}
@@ -36,7 +36,7 @@ const Carousel = () => {
               alt="Slide 1"
               className="w-full h-full object-cover"
             />
-            <div className="absolute top-0 lg:w-1/4 lg:left-32 flex lg:items-start md:left-2 sm:left-2 sm:w-full sm:items-center xs:w-full xs:items-center flex-col justify-center items-start h-full w-1/4 px-4">
+            <div className="absolute cars-titles top-0 lg:w-1/4 lg:left-32 flex lg:items-start md:left-2 sm:left-2 sm:w-full sm:items-center xs:w-full xs:items-center flex-col justify-center items-start h-full w-1/4 px-4">
               <h1 className="text-white pb-10 text-4xl font-bold">
                 Better interiors
               </h1>
@@ -52,23 +52,22 @@ const Carousel = () => {
                 View More{" "}
               </Button>
             </div>
-            <div className="absolute img-cars top-48 right-36 flex flex-row gap-4 lg:flex md:hidden sm:hidden hidden">
-  <div className="w-52 me-10 h-[280px] rounded-3xl overflow-hidden">
-    <img
-      src="https://user-liard-alpha.vercel.app/assets/img1-1-69ec8cee.webp"
-      alt="Right Image 1"
-      className="w-full h-full object-cover"
-    />
-  </div>
-  <div className="w-52 me-10 h-[280px] rounded-3xl overflow-hidden mt-14">
-    <img
-      src="https://user-liard-alpha.vercel.app/assets/img1-2-4856c4b1.webp"
-      alt="Right Image 2"
-      className="w-full h-full object-cover"
-    />
-  </div>
-</div>
-
+            <div className="absolute img-cars  top-48 right-36  flex-row gap-4 lg:flex md:hidden sm:hidden ">
+              <div className="w-52 me-10 h-[280px] rounded-3xl overflow-hidden">
+                <img
+                  src="https://user-liard-alpha.vercel.app/assets/img1-1-69ec8cee.webp"
+                  alt="Right Image 1"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <div className="w-52 me-10 h-[280px] rounded-3xl overflow-hidden mt-14">
+                <img
+                  src="https://user-liard-alpha.vercel.app/assets/img1-2-4856c4b1.webp"
+                  alt="Right Image 2"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+            </div>
           </div>
         </SwiperSlide>
 
@@ -80,7 +79,7 @@ const Carousel = () => {
               alt="Slide 2"
               className="w-full h-full object-cover"
             />
-            <div className="absolute top-0 lg:w-1/4 lg:left-32 flex lg:items-start md:left-2 sm:left-2 sm:w-full sm:items-center xs:w-full xs:items-center flex-col justify-center items-start h-full w-1/4 px-4">
+            <div className="absolute cars-titles top-0 lg:w-1/4 lg:left-32 flex lg:items-start md:left-2 sm:left-2 sm:w-full sm:items-center xs:w-full xs:items-center flex-col justify-center items-start h-full w-1/4 px-4">
               <h1 className="text-white pb-10 text-4xl font-bold">
                 Better interiors
               </h1>
@@ -96,7 +95,7 @@ const Carousel = () => {
                 View More{" "}
               </Button>
             </div>
-            <div className="absolute top-48 right-36 flex flex-row gap-4 lg:flex md:hidden sm:hidden xs:hidden">
+            <div className="absolute img-cars top-48 right-36 flex flex-row gap-4 lg:flex md:hidden sm:hidden xs:hidden">
               <div className="w-52 me-10 h-[280px] rounded-3xl overflow-hidden ">
                 <img
                   src="https://user-liard-alpha.vercel.app/assets/img2-1-3c6d0594.jpg"
@@ -123,7 +122,7 @@ const Carousel = () => {
               alt="Slide 3"
               className="w-full h-full object-cover"
             />
-            <div className="absolute lg:items-start top-0 lg:w-1/4 lg:left-32 flex md:left-2 sm:left-2 sm:w-full sm:items-center xs:w-full xs:items-center flex-col justify-center items-start h-full w-1/4 px-4">
+            <div className="absolute cars-titles lg:items-start top-0 lg:w-1/4 lg:left-32 flex md:left-2 sm:left-2 sm:w-full sm:items-center xs:w-full xs:items-center flex-col justify-center items-start h-full w-1/4 px-4">
               <h1 className="text-white pb-10 text-4xl font-bold">
                 Better interiors
               </h1>
@@ -139,7 +138,7 @@ const Carousel = () => {
                 View More{" "}
               </Button>
             </div>
-            <div className="absolute top-48 right-36 flex flex-row gap-4 lg:flex md:hidden sm:hidden xs:hidden">
+            <div className="absolute img-cars top-48 right-36 flex flex-row gap-4 lg:flex md:hidden sm:hidden xs:hidden">
               <div className="w-52 me-10 h-[280px] rounded-3xl overflow-hidden ">
                 <img
                   src="https://user-liard-alpha.vercel.app/assets/img1-1-69ec8cee.webp"
@@ -166,7 +165,7 @@ const Carousel = () => {
               alt="Slide 4"
               className="w-full h-full object-cover"
             />
-            <div className="absolute lg:items-start top-0 lg:w-1/4 lg:left-32 flex md:left-2 sm:left-2 sm:w-full sm:items-center xs:w-full xs:items-center flex-col justify-center items-start h-full w-1/4 px-4">
+            <div className="absolute cars-titles lg:items-start top-0 lg:w-1/4 lg:left-32 flex md:left-2 sm:left-2 sm:w-full sm:items-center xs:w-full xs:items-center flex-col justify-center items-start h-full w-1/4 px-4">
               <h1 className="text-white pb-10 text-4xl font-bold">
                 Better interiors
               </h1>
@@ -182,7 +181,7 @@ const Carousel = () => {
                 View More{" "}
               </Button>
             </div>
-            <div className="absolute top-48 right-36 flex flex-row gap-4 lg:flex md:hidden sm:hidden xs:hidden">
+            <div className="absolute img-cars top-48 right-36 flex flex-row gap-4 lg:flex md:hidden sm:hidden xs:hidden">
               <div className="w-52 me-10 h-[280px] rounded-3xl overflow-hidden ">
                 <img
                   src="https://user-liard-alpha.vercel.app/assets/img4-1-5978bf7e.webp"

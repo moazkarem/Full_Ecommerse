@@ -1,3 +1,4 @@
+import BestSelling from "../../components/BestSelling/BestSelling";
 import Carosel from "../../components/Carosel/Carosel";
 import ShopCategory from "../../components/ShopCategory/ShopCategory";
 
@@ -7,7 +8,7 @@ const Home = () => {
       <Carosel />
      
         <ShopCategory />
-   
+        <BestSelling />
     </div>
   );
 };
