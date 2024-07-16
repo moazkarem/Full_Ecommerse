@@ -19,12 +19,20 @@ body{
 button{
   transition: 1s;
 }
+/* shoping slider section */
 @media(max-width:639px){
   .shoping-slider{
     /* background-color: #ffb921 !important;
      */
      /* width: 250px !important; */
   }
+}
+/* best sellign */
+@media(max-width:912px){
+.selling-cont{
+  
+  margin-bottom: 3rem;
+}
 }
 
 
