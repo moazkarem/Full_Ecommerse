@@ -8,6 +8,9 @@
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
+img{
+  object-fit: cover;
+}
 body{
 
   background-color: white !important;
@@ -43,3 +46,18 @@ button{
     display: none;
   }
 }
+/* ============================ MODERN HOME SECTION IN HOME PAGE */
+/*  */
+@media (max-width: 639px) {
+  .figures-modern {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr); /* تحديد 12 عمود */
+    gap: 1rem; /* تباعد بين العناصر */
+  }
+  .figures-modern figure {
+
+    width: 90vw !important; /* يأخذ عرض الشاشة الكلي */
+    grid-column: span 12; /* يشغل 12 من الأعمدة */
+  }
+}
+

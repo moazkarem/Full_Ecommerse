@@ -23,10 +23,10 @@ const ShopCategory = () => {
         <div className="flex space-x-2 p-2 z-10 ">
           <button
             onClick={() => swiperRef.current.swiper.slidePrev()}
-            className="p-2 bg-white rounded-full shadow-md"
+            className="p-1 bg-white rounded-full shadow-md  border-2 border-[#133a5e]"
           >
             <svg
-              className="w-6 h-6 text-gray-600"
+              className="w-5 h-5 text-gray-600 "
               fill="none"
               stroke="currentColor"
               viewBox="0 0 24 24"
@@ -42,10 +42,10 @@ const ShopCategory = () => {
           </button>
           <button
             onClick={() => swiperRef.current.swiper.slideNext()}
-            className="p-2 bg-white rounded-full shadow-md"
+            className="p-1 bg-white rounded-full shadow-md border-2 border-[#133a5e]"
           >
             <svg
-              className="w-6 h-6 text-gray-600"
+              className="w-5 h-5 text-gray-600"
               fill="none"
               stroke="currentColor"
               viewBox="0 0 24 24"
