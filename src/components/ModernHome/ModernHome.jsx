@@ -2,6 +2,8 @@ import 'tailwindcss/tailwind.css';
 import Title from "../Title/Title";
 
 const ModernHome = () => {
+   
+  
   return (
     <div className="all-moden-home flex flex-col items-center pb-28 px-4">
       <div className="flex w-full max-w-screen-lg justify-between items-center mb-9">

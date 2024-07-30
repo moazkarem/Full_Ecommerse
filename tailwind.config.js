@@ -7,7 +7,21 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    //  screens:{
+    //   'sm': '1px',   // Small screens (min-width: 1px)
+    //   'md': '600px', // Medium screens (min-width: 600px)
+    //   'lg': '1024px',// Large screens (min-width: 1024px)
+    //   'xl': '1280px',// Extra large screens (min-width: 1280px)
+    //   '2xl': '1536px',// 2x extra large screens (min-width: 1536px)
+    // },
+    extend: {
+      colors: {
+        'primary': '#133a5e',
+        'secondry':'#475569',
+        'bgyellow':'#ffb921'
+      },
+      
+    },
   },
   plugins: [
     daisyui,

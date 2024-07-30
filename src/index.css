@@ -8,38 +8,26 @@
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
-img{
+img {
   object-fit: cover;
 }
-body{
-
+body {
   background-color: white !important;
 }
 .active {
   color: #ffb921 !important;
   background-color: #aaaaaa1c !important;
 }
-button{
+button {
   transition: 1s;
 }
-/* shoping slider section */
-@media(max-width:639px){
-  .shoping-slider{
-    /* background-color: #ffb921 !important;
-     */
-     /* width: 250px !important; */
+
+/* best sellign */
+@media (max-width: 912px) {
+  .selling-cont {
+    margin-bottom: 3rem;
   }
 }
-/* best sellign */
-@media(max-width:912px){
-.selling-cont{
-  
-  margin-bottom: 3rem;
-}
-}
-
-
-
 
 @media (min-width: 1000px) {
   .navbar .flex-none.lg\\:hidden {
@@ -55,9 +43,7 @@ button{
     gap: 1rem; /* تباعد بين العناصر */
   }
   .figures-modern figure {
-
     width: 90vw !important; /* يأخذ عرض الشاشة الكلي */
     grid-column: span 12; /* يشغل 12 من الأعمدة */
   }
 }
-

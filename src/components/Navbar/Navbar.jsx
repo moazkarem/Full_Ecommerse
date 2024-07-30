@@ -26,11 +26,11 @@ const Navbar = () => {
     <div>
       
       <div
-        className={`navbar ${
+        className={`navbar  ${
           scrollY > 300 ? "bg-[#133A5E]" : "bg-transparent "
         } transition-all duration-500 fixed top-0 w-full z-50 h-16`}
       >
-        <div className="container mx-auto px-4 flex justify-between items-center">
+        <div className="container mx-auto px-4 flex justify-between  items-center sm:flex ">
           <div className="flex items-center lg:hidden">
             <button
               className="btn btn-square text-white me-3 btn-ghost"
@@ -51,7 +51,7 @@ const Navbar = () => {
               </svg>
             </button>
           </div>
-          <div className=" flex items-center flex-1 lg:flex-none text-center lg:text-left">
+          <div className=" flex items-center flex-1 lg:flex-none text-center lg:text-left ">
             <img
               className="w-9 me-2"
               src="https://user-liard-alpha.vercel.app/assets/logo-921ec42d.png"
