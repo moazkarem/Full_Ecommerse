@@ -9,29 +9,45 @@ const BestSelling = () => {
   ];
 
   return (
-    <div className="w-full flex flex-col justify-center items-center pb-28  px-4 relative">
-      <div className="flex w-full max-w-screen-lg justify-between items-center mb-9">
+    <div className=" flex flex-col items-center justify-start pb-28 max-sm:mt-12 px-4 sm:mt-12 xl:mt-28  ">
+      <div className="flex text-start justify-start max-sm:mb-3 sm:mb-3 md:mb-5 lg:mb-10">
         <Title name={"Best Selling"} />
       </div>
-      <div className="w-full max-w-screen-lg grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 justify-items-center">
+      <div className="grid max-w-screen-lg w-full lg:text-lg gap-7 max-sm:grid-cols-2 max-sm:gap-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 2xl:grid-cols-4 ">
         {images.slice(0, 4).map((image, index) => (
-          <div key={index} className="relative selling-cont">
-            <div className="w-[240px] h-[288px] flex justify-center items-center overflow-hidden">
+          <div
+            key={index}
+            className=" w-8/9 bg-transparent m-0 group cursor-pointer h-60 max-sm:h-48 mb-16"
+          >
+            <figure className="overflow-hidden rounded-xl h-full w-full ">
               <img
                 src={image}
                 alt={`Best Selling ${index}`}
-                className="rounded-lg w-full h-full object-cover"
+                className="object-cover h-full w-full  scale-100 group-hover:scale-110 ease-in duration-300"
                 loading="lazy"
               />
-            </div>
-            <div className=" absolute left-4 -bottom-10  best-details w-52 p-3 bg-white shadow-2xl rounded-md">
-              <span className=" text-[#133a5e] text-[16px]">yellow chair</span>
-              <div className="pt-1 flex justify-between items-center">
-                <span className="bg-[#8fc83d] px-3 rounded-md text-white">o</span>
-                <div className="flex flex-col  items-center">
-                <span className="text-black font-bold "> $100</span>
-                <span className="text-black line-through  "> $100</span>
+            </figure>
+            <div className=" card-body py-3 z-10 rounded-xl bg-white relative bottom-10  shadow-md px-3  w-11/12 mx-auto h-1/3 max-sm:h-1/2">
+              <h2 className="card-title text-[14px] font-normal leading-tight h-16   text-ellipsis flex items-start text-primary"> yellow chair</h2>
 
+              <div className="flex justify-between mt-1 max-sm:mt-0">
+                <div className="flex gap-2  max-sm:gap-0.5  items-center">
+                  <span className="badge badge-lg relative gap-2 font-medium  border-none bg-[#8FC83D] text-sm max-sm:badge-sm max-sm:py-3 text-white">
+                    o
+                  </span>
+                  <span className="text-[#8A8A8A] text-sm  max-sm:text-xs">
+                    0()
+                  </span>
+                </div>
+                <div className="flex flex-col  items-center">
+                  <span className="font-semibold text-base leading-tight text-black ">
+                    {" "}
+                    $100
+                  </span>
+                  <span className="text-sm line-through text-gray-700 leading-tight ">
+                    {" "}
+                    $100
+                  </span>
                 </div>
               </div>
             </div>

@@ -72,7 +72,7 @@ const ShopCategory = () => {
           }}
           breakpoints={{
             0: {
-              slidesPerView: 1,
+              slidesPerView: 2.2,
             },
 
             600: {

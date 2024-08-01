@@ -6,7 +6,7 @@ const ModernHome = () => {
   
   return (
     <div className="all-moden-home flex flex-col items-center pb-28 px-4">
-      <div className="flex w-full max-w-screen-lg justify-between items-center mb-9">
+      <div className="flex w-full max-w-screen-lg justify-center items-center mb-9">
         <Title name={"Modern Home Ideas"} />
       </div>
       <div className="grid figures-modern grid-flow-row gap-3 max-w-screen-lg sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 2xl:grid-cols-3">

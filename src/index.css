@@ -22,18 +22,7 @@ button {
   transition: 1s;
 }
 
-/* best sellign */
-@media (max-width: 912px) {
-  .selling-cont {
-    margin-bottom: 3rem;
-  }
-}
 
-@media (min-width: 1000px) {
-  .navbar .flex-none.lg\\:hidden {
-    display: none;
-  }
-}
 /* ============================ MODERN HOME SECTION IN HOME PAGE */
 /*  */
 @media (max-width: 639px) {
