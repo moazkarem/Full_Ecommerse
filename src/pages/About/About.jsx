@@ -1,9 +1,14 @@
+import Herosec from "./Herosec/Herosec"
+import Moreabout from "./Moreabout/Moreabout"
+import Secondsec from "./SecondSec/Secondsec"
 
 
 const About = () => {
   return (
     <div>
-      about 
+      <Herosec />
+      <Secondsec />
+      <Moreabout /> 
     </div>
   )
 }

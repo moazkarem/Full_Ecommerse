@@ -11,8 +11,8 @@
 img {
   object-fit: cover;
 }
-body {
-  background-color: white !important;
+body{
+  background-color: #fff !important;
 }
 .active {
   color: #ffb921 !important;
